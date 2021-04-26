@@ -1,0 +1,20 @@
+.star-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #ffc315;
+}
+
+.star-wrapper::before, .stars::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f005 \0020 \f005 \0020 \f005 \0020 \f005 \0020 \f005";
+}
+/* Font Awesome not working needs troubleshooting */
